@@ -16,7 +16,7 @@ class Mission
   end
 
   def total_fuel
-    @total_fuel ||= routes.inject(ship_mass) do |current_mass, (operation, space_object)|
+    @total_fuel ||= routes.reverse.inject(ship_mass) do |current_mass, (operation, space_object)|
       current_mass + operation.call(current_mass, space_object.gravity)
     end - ship_mass
   end
