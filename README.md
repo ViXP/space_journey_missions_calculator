@@ -1,4 +1,4 @@
-# Space missions fuel calculator #
+# Space journey missions fuel calculator #
 
 Test assignment.
 
